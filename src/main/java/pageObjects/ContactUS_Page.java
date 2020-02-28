@@ -33,6 +33,7 @@ public class ContactUS_Page extends BasePage {
 		sendKeysToWebElement(textfield_EmailAddress, email);
 		return new ContactUS_Page();
 	}
+	
 	public ContactUS_Page enterComments(DataTable dataTable, int row, int column) throws Exception {
 		List<List<String>> data = dataTable.raw();
 		sendKeysToWebElement(textfield_message, data.get(row).get(column));
